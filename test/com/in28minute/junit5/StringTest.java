@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class StringTest {
 
 	@Test
-	void test() {
+	void tc01_firstRedBar() { //메소드 이름은 짓고 싶은거 아무거나
 		fail("Not yet implemented");
 	}
 
