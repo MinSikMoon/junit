@@ -1,4 +1,4 @@
-package com.in28minutes.junit5;
+package com.in28minute.junit5;
 
 import static org.junit.jupiter.api.Assertions.*;
 
