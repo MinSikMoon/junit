@@ -28,6 +28,7 @@ class StringTest {
 		String str = "abcd";
 		String result = str.toUpperCase();
 		assertEquals("ABCD", result);
+		assertNotNull(result);
 	}
 	
 	
