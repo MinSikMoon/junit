@@ -23,6 +23,13 @@ class StringTest {
 		assertEquals(expectedLength, actualLength);
 	}
 	
+	@Test
+	void tc03_toUpperCase() { 
+		String str = "abcd";
+		String result = str.toUpperCase();
+		assertEquals("ABCD", result);
+	}
+	
 	
 	
 	
