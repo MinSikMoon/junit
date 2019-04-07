@@ -18,25 +18,21 @@ class StringTest {
 	
 	@Test
 	void tc02_lengthTest() { 
-		int actualLength = "abcd".length();
-		int expectedLength = 4;
-		assertEquals(expectedLength, actualLength);
+		assertEquals(4, "abcd".length());
 	}
 	
 	@Test
 	void tc03_toUpperCase() { 
 		String str = "abcd";
-		String result = str.toUpperCase();
-		assertEquals("ABCD", result);
-		assertNotNull(result);
+		assertEquals("ABCD", str.toUpperCase());
+		assertNotNull(str.toUpperCase());
 	}
 	
 	@Test
 	void tc04_contains() {
 		String str = "abcdefg";
-		boolean result = str.contains("i jk");
-		assertEquals(false, result);
-		assertFalse(result);
+		assertEquals(false, str.contains("i jk"));
+		assertFalse(str.contains("i jk"));
 	}
 	
 	
