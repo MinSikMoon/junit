@@ -2,12 +2,23 @@ package com.in28minute.junit5;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
 
 class StringTest {
+	@BeforeAll
+	static void beforeAll() {
+		System.out.println("initialize connection to database");
+	}
+	
+	@AfterAll
+	static void afterAll() {
+		System.out.println("close connection to database");
+	}
 	
 	@BeforeEach //@Before in junit4
 	void beforeEach(TestInfo info) { //junit4에서는 없는 객체
