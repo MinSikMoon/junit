@@ -23,16 +23,14 @@ class StringTest {
 	
 	@Test
 	void tc03_toUpperCase() { 
-		String str = "abcd";
-		assertEquals("ABCD", str.toUpperCase());
-		assertNotNull(str.toUpperCase());
+		assertEquals("ABCD", "abcd".toUpperCase());
+		assertNotNull("abcd".toUpperCase());
 	}
 	
 	@Test
 	void tc04_contains() {
-		String str = "abcdefg";
-		assertEquals(false, str.contains("i jk"));
-		assertFalse(str.contains("i jk"));
+		assertEquals(false, "abcdefg".contains("i jk"));
+		assertFalse("abcdefg".contains("i jk"));
 	}
 	
 	
