@@ -33,6 +33,14 @@ class StringTest {
 		assertFalse("abcdefg".contains("i jk"));
 	}
 	
+	@Test
+	void tc05_split() {
+		String str = "abc def ghi";
+		String actual[] = str.split(" ");
+		String[] expected = new String[] {"abc", "def", "ghi"};
+		assertArrayEquals(expected, actual);
+	}
+	
 	
 	
 	
