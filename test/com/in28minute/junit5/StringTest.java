@@ -5,15 +5,16 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInfo;
 
 class StringTest {
 	
-	@BeforeEach
-	void beforeEach() {
-		System.out.println("initialize test data for each test");
+	@BeforeEach //@Before in junit4
+	void beforeEach(TestInfo info) { //junit4에서는 없는 객체
+		System.out.println("initialize test data for each test" + info.getDisplayName());
 	}
 	
-	@AfterEach
+	@AfterEach //@After in junit4
 	void afterEach() {
 		System.out.println("clean up test data");
 	}
