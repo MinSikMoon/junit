@@ -31,6 +31,14 @@ class StringTest {
 		assertNotNull(result);
 	}
 	
+	@Test
+	void tc04_contains() {
+		String str = "abcdefg";
+		boolean result = str.contains("i jk");
+		assertEquals(false, result);
+		assertFalse(result);
+	}
+	
 	
 	
 	
