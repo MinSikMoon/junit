@@ -6,10 +6,11 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
 
-class StringTest {
+class StringTest { //junit5는 모든 테스트가 public일 필요는 없다.
 	@BeforeAll
 	static void beforeAll() {
 		System.out.println("initialize connection to database");
@@ -66,6 +67,7 @@ class StringTest {
 	}
 
 	@Test
+	@DisplayName("when str is null, throw an exception") //display name
 	void tc06_exception() {
 		String str = null;
 		assertThrows(NullPointerException.class, () -> {
