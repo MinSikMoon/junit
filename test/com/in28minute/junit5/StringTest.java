@@ -2,9 +2,21 @@ package com.in28minute.junit5;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class StringTest {
+	
+	@BeforeEach
+	void beforeEach() {
+		System.out.println("initialize test data for each test");
+	}
+	
+	@AfterEach
+	void afterEach() {
+		System.out.println("clean up test data");
+	}
 
 	@Test
 	void tc01_firstRedBar() { //메소드 이름은 짓고 싶은거 아무거나
